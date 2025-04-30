@@ -1,0 +1,13 @@
+Streamlit for data analaysis
+
+image or text or pdf to be taken and stored ...
+
+search for a website which takes react + uvicorn + and has inbuilt mysql 
+
+delete the entire db after taking a screen shot ..to chck if works anywhere withoit manually creating db
+Also instead of excel make sure it is visible in a website at side like that 
+
+
+Image llm 
+
+Image upload option giving in react

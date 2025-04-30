@@ -1,0 +1,4 @@
+cannot 
+be loaded because running scripts is disabled on this system
+
+Then open cmd and run the command not vs code terminal ...n vs code also click on + and select the cmd prompt

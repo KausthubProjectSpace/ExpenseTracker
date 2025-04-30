@@ -1,0 +1,39 @@
+/* src/index.css (or your global stylesheet) */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .holographic-card {
+    @apply relative overflow-hidden rounded-lg border border-white/10 bg-gray-900 shadow-lg; 
+
+    &::before {
+      content: '';
+      @apply absolute inset-0 z-0; 
+      @apply bg-gradient-to-br from-pink-400/20 via-purple-400/15 to-cyan-400/20; 
+      @apply opacity-70; 
+      @apply transition-opacity duration-300;
+    }
+
+    &:hover::before {
+       @apply opacity-90; 
+    }
+
+    & > * {
+      @apply relative z-10; 
+    }
+  }
+}
+
+/* Optional: Add keyframes for a subtle shimmer animation (more advanced) */
+
+@keyframes holo-shimmer {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.holographic-card::before {
+  background-size: 200% 200%; 
+  animation: holo-shimmer 10s linear infinite; 
+}
